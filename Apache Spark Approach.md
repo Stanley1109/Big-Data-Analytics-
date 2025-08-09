@@ -5,7 +5,7 @@ As an alternative to the MapReduce pipeline, we implemented the same logic using
 nano sentiment_python.py
 ```
 #### sentiment_python.py
-```bash
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, lower, split, size, udf
 from pyspark.sql.functions import avg, count, sum as _sum
