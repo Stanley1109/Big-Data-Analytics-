@@ -73,10 +73,12 @@ df = df.withColumn("sentiment_type", sentiment_type_udf(col("sentiment_score")))
 
 result_df = df.groupBy("book_id").agg(
     count("*").alias("total_reviews"),
-    avg("sentiment_score").alias("avg_sentiment_score"),
+    _sum("sentiment_score").alias("total_score"),
     _sum((col("sentiment_type") == "positive").cast("int")).alias("positive_count"),
     _sum((col("sentiment_type") == "neutral").cast("int")).alias("neutral_count"),
     _sum((col("sentiment_type") == "negative").cast("int")).alias("negative_count")
+).withColumn(
+    "avg_sentiment_score", (col("total_score") / col("total_reviews"))
 ).select(
     "book_id", "total_reviews", "avg_sentiment_score", "positive_count", "neutral_count", "negative_count"
 ).orderBy(col("book_id").asc())  # ✅ sort by book_id ascending
