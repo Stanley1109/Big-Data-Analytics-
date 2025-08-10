@@ -16,7 +16,7 @@ This project focuses on efficiently processing and analysing a large dataset of 
 
 ## 📦 Dataset
 
-This project uses flight performance data sourced from Kaggle:
+This project uses Amazon Book Reviews data sourced from Kaggle:
 
 🔗 [Amazon Book Reviews(Kaggle)](https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews/data?select=Books_rating.csv)
 
