@@ -30,7 +30,7 @@ This project uses Amazon Book Reviews data sourced from Kaggle:
 
 | Name                    | Student ID  |
 |-------------------------|-------------|
-| Stanley Chung Shen Wei  | 22057251    |
-| Lam Zi Xin              | 22049126    |
-| Terrance Loong Jun Yen  | 21026976    |
+| Stanley Chung Shen Wei  | 22023196    |
+| Lam Zi Xin              | 22023071    |
+| Terrance Loong Jun Yen  | 21066709    |
 
