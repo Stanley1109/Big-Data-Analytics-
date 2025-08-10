@@ -7,8 +7,9 @@ This project focuses on efficiently processing and analysing a large dataset of 
 ## 📁 Files in this Repo
 
 - `README.md`: Project overview
-- `mappernolib.py`: Script to clean and split the raw Kaggle dataset into chunks
-- `reducernolib.py`: Script to merge cleaned chunks into a single CSV file
+- `mappernolib.py`: Script for mapper for sentiment analysis
+- `reducernolib.py`: Script for reducer for sentiment analysis
+- `sentiment_pyspark.py`: Script for Apache Spark for sentiment analysis
 - `MapReduce Approach.md`: Full execution guide and explanation of the Hadoop MapReduce implementation
 - `Non-MapReduce Approach.md`: Full execution guide and explanation of the Apache Spark (non-MapReduce) implementation
 
