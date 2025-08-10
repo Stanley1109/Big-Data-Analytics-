@@ -37,7 +37,7 @@ hadoop fs -put SMProject /user/hadoop/SMProject/
 Two Python scripts were written to perform the MapReduce job. The mapper (mappernolib.py) reads each book review from CSV input, tokenizes the review text, assigns a score by counting predefined positive and negative words, determines the sentiment (positive, negative, or neutral), and outputs the book ID with its score and sentiment. The reducer (reducernolib.py) aggregates these results for each book, calculating the total number of reviews, average score, and counts of positive, neutral, and negative reviews, then outputs these summary statistics per book.
 
 #### mapper.py
-```bash
+```python
 #!/usr/bin/env python3
 import sys
 import csv
@@ -85,7 +85,7 @@ for row in reader:
     print(f"{book_id}\t{score},{sentiment}")
 ```
 #### reducer.py
-```bash
+```python
 #!/usr/bin/env python3
 import sys
 
